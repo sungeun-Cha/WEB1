@@ -3,26 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "colors.js"></script>
     <title>UX / UI</title>
   </head>
   <body>
     <h1><a href="Home.html">코딩하는 디자이너</a></h1>
-      <div>
-        <span>모드 변경 : </span>
-        <!--조건문 응용 법 및 변수 사용-->
-          <input  type="button" value="night" onclick="
-            var target = document.querySelector('body')
-            if(this.value === 'night'){
-              target.style.backgroundColor= 'black';
-              target.style.color = 'white';
-              this.value = 'day';
-            }else{
-              target.style.backgroundColor= 'white';
-              target.style.color = 'black';
-              this.value = 'night';
-            }
-          ">
-      </div>
+      <input  type="button" value="night" onclick="nightDayHandler(this)">
       <div id="grid">
         <div>
             <ol>
